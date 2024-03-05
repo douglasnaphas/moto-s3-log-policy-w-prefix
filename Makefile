@@ -16,7 +16,7 @@ venv: $(VENV)/bin/activate
 
 test: venv clean
 	. $(VENV)/bin/activate; \
-	pytest -s
+	pytest -s test.py
 
 clean:
 	rm -fr build
