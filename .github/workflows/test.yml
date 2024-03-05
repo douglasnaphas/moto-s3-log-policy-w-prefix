@@ -11,6 +11,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Create virtual environment
+        run: |
+          make venv
       - name: Install dependencies
         run: |
           make install
